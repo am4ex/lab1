@@ -1,0 +1,92 @@
+{
+  "bookstore": {
+    "address": "ул. Примерная, 1",
+    "phone": "+7 999 999 99 99",
+    "books": [
+      {
+        "id": 1,
+        "title": "Приключения",
+        "price": 500,
+        "author": {
+          "id": 1,
+          "name": "Иванов"
+        },
+        "genre": "Children",
+        "age_group": "7+",
+        "field": "",
+        "subgenre": "",
+        "buyers": [
+          {
+            "id": 1,
+            "name": "Максим",
+            "phone": "12345",
+            "email": "max@mail.com"
+          }
+        ],
+        "employees": [
+          {
+            "id": 1,
+            "name": "Петр",
+            "phone": "54321",
+            "position": "Продавец",
+            "salary": 2000
+          }
+        ],
+        "reviews": [
+          {
+            "buyer": {
+              "id": 1,
+              "name": "Максим",
+              "phone": "12345",
+              "email": "max@mail.com"
+            },
+            "rating": 5,
+            "comment": "Отличная книга!"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Физика",
+        "price": 800,
+        "author": {
+          "id": 2,
+          "name": "Петров"
+        },
+        "genre": "Science",
+        "age_group": "",
+        "field": "Наука",
+        "subgenre": "",
+        "buyers": [
+          {
+            "id": 2,
+            "name": "Оля",
+            "phone": "67890",
+            "email": "olya@mail.com"
+          }
+        ],
+        "employees": [
+          {
+            "id": 1,
+            "name": "Петр",
+            "phone": "54321",
+            "position": "Продавец",
+            "salary": 2000
+          }
+        ],
+        "reviews": [
+          {
+            "buyer": {
+              "id": 2,
+              "name": "Оля",
+              "phone": "67890",
+              "email": "olya@mail.com"
+            },
+            "rating": 4,
+            "comment": "Неплохо, но сложно"
+          }
+        ]
+      }
+    ]
+  }
+}

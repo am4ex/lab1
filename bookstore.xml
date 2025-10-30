@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<bookstore>
+  <address>ул. Примерная, 1</address>
+  <phone>+7 999 999 99 99</phone>
+  <books>
+    <book id="1">
+      <title>Приключения</title>
+      <price>500</price>
+      <author id="1">
+        <name>Иванов</name>
+      </author>
+      <genre>Children</genre>
+      <age_group>7+</age_group>
+      <buyers>
+        <buyer id="1">
+          <name>Максим</name>
+          <phone>12345</phone>
+          <email>max@mail.com</email>
+        </buyer>
+      </buyers>
+      <employees>
+        <employee id="1">
+          <name>Петр</name>
+          <phone>54321</phone>
+          <position>Продавец</position>
+          <salary>2000</salary>
+        </employee>
+      </employees>
+      <reviews>
+        <review>
+          <buyer id="1">
+            <name>Максим</name>
+            <phone>12345</phone>
+            <email>max@mail.com</email>
+          </buyer>
+          <rating>5</rating>
+          <comment>Отличная книга!</comment>
+        </review>
+      </reviews>
+    </book>
+    <book id="2">
+      <title>Физика</title>
+      <price>800</price>
+      <author id="2">
+        <name>Петров</name>
+      </author>
+      <genre>Science</genre>
+      <field>Наука</field>
+      <buyers>
+        <buyer id="2">
+          <name>Оля</name>
+          <phone>67890</phone>
+          <email>olya@mail.com</email>
+        </buyer>
+      </buyers>
+      <employees>
+        <employee id="1">
+          <name>Петр</name>
+          <phone>54321</phone>
+          <position>Продавец</position>
+          <salary>2000</salary>
+        </employee>
+      </employees>
+      <reviews>
+        <review>
+          <buyer id="2">
+            <name>Оля</name>
+            <phone>67890</phone>
+            <email>olya@mail.com</email>
+          </buyer>
+          <rating>4</rating>
+          <comment>Неплохо, но сложно</comment>
+        </review>
+      </reviews>
+    </book>
+  </books>
+</bookstore>
