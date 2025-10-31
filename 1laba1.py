@@ -4,6 +4,11 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from typing import List
 
+class InvalidPrice(Exception):
+    def __init__(self, price):
+        super().__init__(f"Error {price} Error")
+        self.price = price
+
 class Bookstore:
     def __init__(self, address: str, phone: str):
         self.address = address
@@ -94,7 +99,10 @@ class Book(ABC):
         author.add_book(self)
         self.employees = []
         self.buyers = [] 
-        self.reviews = []     
+        self.reviews = []  
+        
+        if price <= 0:
+            raise InvalidPrice(price)   
 
     @abstractmethod
     def get_info(self) -> str:
